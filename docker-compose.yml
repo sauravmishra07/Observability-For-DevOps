@@ -2,7 +2,7 @@ version: '3.9'
 
 services:
   mongodb:
-    image: mongo:7
+    image: mongo:6.0
     container_name: notes_mongodb
     restart: unless-stopped
     environment:
