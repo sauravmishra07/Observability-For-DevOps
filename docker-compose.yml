@@ -6,8 +6,8 @@ services:
     container_name: notes_mongodb
     restart: unless-stopped
     environment:
-      MONGO_INITDB_ROOT_USERNAME: admin
-      MONGO_INITDB_ROOT_PASSWORD: password
+      MONGO_INITDB_ROOT_USERNAME: saurav
+      MONGO_INITDB_ROOT_PASSWORD: saurav8587
       MONGO_INITDB_DATABASE: notes_db
     ports:
       - "27017:27017"
