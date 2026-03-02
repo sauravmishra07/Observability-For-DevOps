@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-primary: #0f0f0f;
+    --bg-secondary: #171717;
+    --bg-tertiary: #1f1f1f;
+    --accent: #d4a853;
+    --accent-light: #e8c47a;
+    --text-primary: #f5f0e8;
+    --text-secondary: #a8a090;
+    --border: #2a2a2a;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    @apply bg-[#0f0f0f] text-[#f5f0e8] font-sans antialiased;
+    min-height: 100vh;
+  }
+
+  ::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #171717;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #3a3a3a;
+    border-radius: 2px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #d4a853;
+  }
+}
+
+@layer components {
+  .note-card {
+    @apply relative rounded-xl border border-[#2a2a2a] bg-[#171717] p-5 transition-all duration-200 hover:border-[#d4a853]/30 hover:shadow-lg hover:shadow-[#d4a853]/5 cursor-pointer;
+  }
+  
+  .btn-primary {
+    @apply px-4 py-2 rounded-lg bg-[#d4a853] text-[#0f0f0f] font-medium text-sm hover:bg-[#e8c47a] transition-colors duration-150 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  
+  .btn-ghost {
+    @apply px-4 py-2 rounded-lg text-[#a8a090] text-sm hover:bg-[#1f1f1f] hover:text-[#f5f0e8] transition-colors duration-150;
+  }
+  
+  .input-field {
+    @apply w-full bg-[#1f1f1f] border border-[#2a2a2a] rounded-lg px-4 py-2.5 text-[#f5f0e8] text-sm placeholder:text-[#4a4a4a] focus:outline-none focus:border-[#d4a853]/50 focus:ring-1 focus:ring-[#d4a853]/20 transition-all;
+  }
+  
+  .sidebar-item {
+    @apply flex items-center gap-3 px-3 py-2.5 rounded-lg text-[#a8a090] text-sm hover:bg-[#1f1f1f] hover:text-[#f5f0e8] transition-colors cursor-pointer;
+  }
+  
+  .sidebar-item.active {
+    @apply bg-[#d4a853]/10 text-[#d4a853];
+  }
+}

@@ -1,0 +1,35 @@
+# ===============================
+# Node / React Frontend
+# ===============================
+
+# Node modules
+node_modules/
+build/
+dist/
+.next/
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+coverage/
+.DS_Store
+.vscode/
+.idea/
+*.log
+.npm/
+.eslintcache
+.stylelintcache
+.yarn-integrity
+.vite/
+.parcel-cache/
+.rollup.cache/
+.tsbuildinfo
+storybook-static/
+tmp/
+temp/
+.firebase/
+.serverless/
+.dynamodb/
+.tern-port
+.vscode-test/
